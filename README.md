@@ -8,7 +8,7 @@ A web application for managing and developing marketing skills.
 
 ### Prerequisites
 
-- Node.js (v18 or higher)
+- Node.js (v22 or higher) — Node.js 20.x reached end-of-life on April 30, 2026. See [Announcing the end of support for Node.js 20.x in the Azure SDK for JavaScript](https://devblogs.microsoft.com/azure-sdk/announcing-the-end-of-support-for-node-js-20-x-in-the-azure-sdk-for-javascript/) for details.
 - npm or yarn
 
 ### Installation

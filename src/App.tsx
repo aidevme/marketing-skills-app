@@ -118,6 +118,13 @@ const useStyles = makeStyles({
     padding: '80px 32px',
     color: tokens.colorNeutralForeground3,
   },
+  footer: {
+    textAlign: 'center',
+    paddingTop: '16px',
+    paddingBottom: '32px',
+    color: tokens.colorNeutralForeground4,
+    lineHeight: '1.6',
+  },
 });
 
 function App() {
@@ -219,14 +226,20 @@ function App() {
             <Text size={400}>No skills found matching &ldquo;{search}&rdquo;</Text>
           </div>
         )}
-        {filteredCategories.length > 0 && (
-          <Text size={200} style={{ color: tokens.colorNeutralForeground3, display: 'block', textAlign: 'center', paddingTop: '16px' }}>
-            Showing {totalVisible} of {totalSkills} skills &mdash;{' '}
-            <a href="https://github.com/coreyhaines31/marketingskills" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit' }}>
+        <div className={styles.footer}>
+          {filteredCategories.length > 0 && (
+            <Text size={200} style={{ display: 'block' }}>
+              Showing {totalVisible} of {totalSkills} skills
+            </Text>
+          )}
+          <Text size={200} style={{ display: 'block', marginTop: '8px' }}>
+            Based on{' '}
+            <a href="https://github.com/coreyhaines31/marketingskills" target="_blank" rel="noopener noreferrer" style={{ color: tokens.colorNeutralForeground3 }}>
               coreyhaines31/marketingskills
             </a>
+            {' '}&mdash; MIT License &copy; 2025 Corey Haines
           </Text>
-        )}
+        </div>
       </div>
     </div>
   );

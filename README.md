@@ -29,6 +29,10 @@ npm start
 npm run build
 ```
 
+## Related Repositories
+
+- **Backend**: [aidevme/marketing-skills-app-backend](https://github.com/aidevme/marketing-skills-app-backend) — Backend functionality source code
+
 ## Project Structure
 
 ```
